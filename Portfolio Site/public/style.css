@@ -1,0 +1,68 @@
+* {
+    font-family: 'Libre Baskerville', serif;
+    color:white;
+}
+
+body {
+    background-color: white;
+    background-position: 50% 75%;
+    background-image: url("CootiesCaught.png");
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.bioTextBlock {
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.navigationBar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 25%;
+  }
+
+.portfolioContainer{
+    width: 500px;
+    height: 500px;
+    background-color: lightgray;
+    position: center;
+} 
+
+/* .bioHyperLink {
+    position: absolute;
+    top: 50% 50%;
+    width: 250px;
+    height: 250px;
+    background-color: lightgray; */
+} 
+
+/* .gitHyperLink{
+    border: black border 2px;
+    width: 500px;
+    height: 500px;}
+
+.portfolioHyperLink {
+    border: black border 2px;
+    width: 500px;
+    height: 500px;}
+
+.linkedinHyperLink {
+    border: black border 2px;
+    width: 500px;
+    height: 500px;
+}   */
+
