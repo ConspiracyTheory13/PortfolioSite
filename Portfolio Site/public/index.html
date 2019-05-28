@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,34 +9,54 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     </head>
-    <body>
-        <header class="navigationBar">
-            <h1>Charla Bigelow</h1>
-            <h2>“Strangeness is a necessary ingredient in beauty.”</h2>
+    <header class="navigationBar">
+        <h1>Charla Bigelow</h1>
+        <h2>“Strangeness is a necessary ingredient in beauty.”</h2>
+        <h2>HTML | CSS | Javascript</h2>
         </header>
-        
-        <label>
+    <body>
+        <div class="scrollingBox">
+            <label>
                 <div class="portfolioContainer">
-                <div class="bioHyperLink">
-                        <!-- <a class="jumper" href="#bio" style="color: #b0ffa5;">Biography</a> -->
+
+                    <a class="bioHyperLink" href="#bioBlock"></a>                
+                    <a class="githubHyperLink" href="https://github.com/ConspiracyTheory13"></a>
+                    <a class="portfolioHyperLink" href="#portfolioBlock"></a>
+                    <a class="linkedinHyperLink" href="https://www.linkedin.com/in/charla-bigelow-b17169154/"></a>
                 </div>
-                <div class="githubHyperLink">
-                    </div>
-                <div class="portfolioHyperLink">
-                </div>
-                <div class="linkedinHyperLink">
-                    </div>
-                </div>
-                
-                <!-- <div class="bioTextBlock" id="#bio"> <img src="profile.jpg" alt="head shot of Charla Bigelow"> -->
-                    <h3>Hi, my name is Charla. I play well with CSS, HTML, and Javascript. </h3> -->
-                </div> -->
-                
-                <!-- <div class="portfolioBlock"> 
-                        <h3>Quiz App</h3>
-                </div> -->
+
+                <section role= "Biography Text Block"> 
+                        <div class="bioTextBlock" id="#bioBlock">
+                            <h1>Biography</h1>
+                            <p> Salutations, 
+                                Feel free to call me Charlotte.
+                                I'm a recent bootcamp grad from the online Web Developer Track
+                                through the Thinkful and Bloc partnership and an Oregon native who holds a 
+                                Bachelor's degree in Social Sciences from Portland State University with a focus 
+                                in Psychology. You'll find me in the phone book under unusual solutions, 
+                                for finding both the question and the answer, and addressing those problems that feel solutionless.
+
+                                My heart lies with integrity driven services and businesses, accessibility
     
-        </label>
-            <script src="index.js"></script>
-    </body>
+                            </p>
+                            <img src="profile.jpg" class= "profileImage" alt="head shot of Charla Bigelow">
+                        </div> 
+                    </section>
+                    
+                    <section role= "Portfolio Section">    
+                        <div id="portfolioBlock" class="portfolioBlock"> 
+                            <h1>Portfolio</h1>
+                            <h3>Cognition and Mental Heuristics Quiz App</h3>
+                            <ul>
+                            <li><a href="#example">Live</a></li>
+                            <li><a href="#example">Repo</a></li>
+                            </ul>
+                            <img class= "quizAppExample" src="quizappexample1.png">   
+                        </div>
+                    </section>
+            </label>
+                <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="index.js"></script>
+            </body>
+        </div>
 </html>

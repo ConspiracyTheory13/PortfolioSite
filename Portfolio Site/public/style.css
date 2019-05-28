@@ -1,30 +1,94 @@
 * {
     font-family: 'Libre Baskerville', serif;
     color:white;
+    box-sizing: border-box;
 }
 
 body {
     background-color: white;
-    background-position: 50% 75%;
     background-image: url("CootiesCaught.png");
     background-repeat: no-repeat;
+    background-position: 50% 10%;
     background-size: 500px 500px;
-}
+    flex-direction: column;
+    }
 
 h1 {
     text-align: center;
+    font-size: 30px;
 }
 
 h2 {
     text-align: center;
+    font-size: 25px;
 }
 
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
 
+a {
+    text-align: center;
+}
+
+p {
+    float:right;
+    margin: 20px;
+    max-width: 60ch;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+a {
+    color: blue;
+    font-size: 18px; 
+    padding-left: 50%;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float:left;
+}
+
+/* .scrollingBox{
+    scroll-behavior: smooth;
+} */
+
+.profileImage {
+    border-radius: 25%;
+    height: 400px;
+    width: 400px;
+    float: center left;
+    margin-left: 5%;
+}
+
+.quizAppExample {
+    border: gray 2px solid;
+    margin-left: 30px;
+}
 .bioTextBlock {
     background-color: black;
-    height: 200px;
     width: 100%;
-    padding-top: 200px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 10%;
+}
+
+.portfolioBlock {
+    background-color: black;
+    width: 100%;
+    padding-top: 10px;
+    align-content: center;
+    align-items: left;
+    
 }
 
 .navigationBar {
@@ -33,36 +97,49 @@ h2 {
     top: 0;
     width: 100%;
     height: 25%;
+    border-bottom: white 2px solid;
   }
 
 .portfolioContainer{
-    width: 500px;
-    height: 500px;
-    background-color: lightgray;
-    position: center;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    width: 450px;    
+    height: 450px;
+    /* border: black 4px solid; */
+    margin: 0 auto;
+    margin-bottom: 10%;
+    margin-top: 17%;
 } 
 
-/* .bioHyperLink {
-    position: absolute;
-    top: 50% 50%;
-    width: 250px;
-    height: 250px;
-    background-color: lightgray; */
+.bioHyperLink {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    /* border: red 2px solid; */
 } 
 
-/* .gitHyperLink{
-    border: black border 2px;
-    width: 500px;
-    height: 500px;}
+.portfolioHyperLink{
+    /* border: blue 2px solid; */
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
+}
 
-.portfolioHyperLink {
-    border: black border 2px;
-    width: 500px;
-    height: 500px;}
+.githubHyperLink { 
+    /* border: purple solid 2px; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
 
 .linkedinHyperLink {
-    border: black border 2px;
-    width: 500px;
-    height: 500px;
-}   */
+    /* border: green 2px solid; */
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 2;
+}   
+
+
 
